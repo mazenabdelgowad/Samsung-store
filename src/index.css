@@ -1,0 +1,28 @@
+:root {
+  --main-color: #110506;
+  --partener-color: #b9afb4;
+  --text-color: #a49f9e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+p {
+  margin: 0 !important;
+  word-break: break-word;
+}
+
+ul {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+section {
+  margin: 70px 0;
+}

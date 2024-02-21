@@ -1,0 +1,34 @@
+.hero {
+  & .hero-title {
+    @media (max-width: 992px) {
+      margin-bottom: 1rem;
+    }
+    & > h5 {
+      color: var(--main-color);
+      font-weight: bold;
+    }
+    & .hero-title-main-title {
+      color: var(--main-color);
+      font-size: 4.5rem;
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+    & .hero-title-description {
+      color: var(--text-color);
+    }
+    & .hero-title-button {
+      background-color: var(--main-color);
+      padding: 1rem 2rem;
+      color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      transition: 0.1s;
+      @media (max-width: 768px) {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}

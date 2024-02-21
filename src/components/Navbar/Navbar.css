@@ -1,0 +1,12 @@
+.navbar {
+  & .navbar-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+    & .first-title {
+      color: var(--main-color);
+    }
+    & .second-title {
+      color: var(--main-color);
+    }
+  }
+}
