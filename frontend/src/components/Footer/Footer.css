@@ -1,0 +1,116 @@
+footer {
+  background-color: var(--main-color);
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  & a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  & hr {
+    font-size: 2px;
+    color: #fff;
+  }
+
+  & .footer_top {
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #919191;
+
+    & .footer_top_social_links_logo {
+      flex: 1;
+      @media (max-width: 992px) {
+        & {
+          text-align: center;
+        }
+      }
+      & a {
+        font-weight: bold;
+      }
+    }
+
+    & .footer_top_social_links_icons {
+      @media (min-width: 992px) {
+        & {
+          flex: 0;
+        }
+      }
+      @media (max-width: 992px) {
+        & {
+          justify-content: center;
+          margin-top: 1rem !important;
+        }
+      }
+      & a {
+        background-color: #ff445a;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+      & svg {
+        color: #fff;
+      }
+    }
+
+    & .footer_top_social_links_useful_links {
+      flex: 1;
+
+      @media (min-width: 992px) {
+        justify-content: flex-end;
+      }
+
+      @media (max-width: 992px) {
+        & {
+          justify-content: center;
+          margin-top: 1rem !important;
+        }
+      }
+
+      & a {
+        transition: 0.3s;
+        text-transform: capitalize;
+        font-weight: 600;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    & h6,
+    & h3 {
+      text-transform: capitalize;
+      color: #fff;
+    }
+
+    @media (max-width: 992px) {
+      & .footer_top_call_us,
+      & .footer_top_email_us,
+      & .footer_top_main_shop {
+        text-align: center;
+      }
+      & .footer_top_email_us,
+      & .footer_top_main_shop {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  & .footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    & p {
+      color: #c9c9c9;
+      &:not(:first-of-type) {
+        @media (max-width: 768px) {
+          margin-top: 0.2rem !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.contact {
+  & form {
+    & input,
+    & textarea {
+      outline: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      border: 2px solid var(--border-color);
+      width: 100%;
+      transition: 0.1s;
+      &:focus {
+        border-color: #eee;
+        box-shadow: inset 0 0px 18px #47baee;
+      }
+    }
+    & textarea {
+      min-height: 150px;
+      resize: none;
+    }
+  }
+}

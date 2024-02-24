@@ -10,7 +10,7 @@
     & .hero-title-main-title {
       color: var(--main-color);
       font-size: 4.5rem;
-
+      line-height: 1;
       @media (max-width: 768px) {
         font-size: 2rem;
       }

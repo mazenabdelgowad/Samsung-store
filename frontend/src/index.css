@@ -2,6 +2,7 @@
   --main-color: #110506;
   --partener-color: #b9afb4;
   --text-color: #a49f9e;
+  --border-color: #afafaf;
 }
 
 h1,
@@ -14,7 +15,7 @@ a,
 span,
 p {
   margin: 0 !important;
-  word-break: break-word;
+  word-break: break-word !important;
 }
 
 ul {

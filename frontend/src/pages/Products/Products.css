@@ -1,0 +1,17 @@
+.products {
+  & .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+  }
+
+  & .product-card {
+    border: 2px solid #dadada;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+}
